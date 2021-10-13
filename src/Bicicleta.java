@@ -1,4 +1,4 @@
-public class Bicicleta implements Rueda{
+public class Bicicleta implements Rueda, Silla{
 
 
     //Constructor por sin argumentos
@@ -13,5 +13,10 @@ public class Bicicleta implements Rueda{
     @Override
     public void detenerse() {
         System.out.println("La bicileta se detiene");
+    }
+
+    @Override
+    public void sentarse() {
+        System.out.println("Me siento en la bicicleta");
     }
 }
